@@ -12,7 +12,7 @@ const UI = (data) => {
 
 const find = (element) => {
     let result = ''
-    fetch(`https://www.omdbapi.com/?apikey=add73b1a&i=${element}`)
+    fetch(`https://www.omdbapi.com/?apikey=ac7b0a43&i=${element}`)
         .then(response => response.json())
         .then(data => {
             result += UI(data)

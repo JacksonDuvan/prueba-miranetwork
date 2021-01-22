@@ -34,7 +34,7 @@ const UI = (data) => {
 const getData = (movies) => {
     let result = ''
     movies.forEach(element => {
-        fetch(`http://www.omdbapi.com/?apikey=add73b1a&t=${element}&y=2020`)
+        fetch(`https://www.omdbapi.com/?apikey=ac7b0a43&t=${element}&y=2020`)
             .then(response => response.json())
             .then(data => {
                 result += UI(data)
@@ -53,7 +53,7 @@ const getAll = () => {
 
     let result = ''
     topMovies.forEach(element => {
-        fetch(`https://www.omdbapi.com/?apikey=add73b1a&i=${element}`)
+        fetch(`https://www.omdbapi.com/?apikey=ac7b0a43&i=${element}`)
             .then(response => response.json())
             .then(data => {
                 result += UI(data)
