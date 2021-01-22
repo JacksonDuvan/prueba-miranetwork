@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;700;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png">
+</head>
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="./images/logo.png" alt="Logo Movies">
+        </a>
+        <img class="burger-menu" id="burger" src="./images/icons8-menu-24.png" alt="burger-menu"/>
+        <nav class="nav">
+            <ul class="header-list">
+                <li>Home</li>
+                <li>Categories</li>
+                <li>My Favorites</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-p"> 
+               <p><span>Programa tu fin de semana con <strong>Movies</strong>
+                escoge tus peliculas favorítas</span></p>
+            </div>
+        </section>
+        <section class="movies">
+            <ol class="movies-nav">
+                <li><button class="btn" id="all">All</button></li>
+                <li><button class="btn" id="releases">New releases</button></li>
+                <li><button class="btn" id="popular">Most popular</button></li>
+                <li><button class="btn" id="trends">Trends</button></li>
+                <li><button class="btn" id="recomendations">Recomendations</button></li>
+            </ol>
+            <div id="movies" class="movies-api">
+               
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>
