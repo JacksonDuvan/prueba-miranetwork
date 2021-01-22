@@ -44,7 +44,10 @@ const getData = (movies) => {
                 moviesContainer.innerHTML = result
                 container.innerHTML = ''
             })
-            .catch(err => console.log(err))
+            .catch(err => {
+                console.log("http get method err", err)
+                throw Error(err)
+            })
     })
 }
 
@@ -65,7 +68,10 @@ const getAll = () => {
                 moviesContainer.innerHTML = result
                 container.innerHTML = ''
             })
-            .catch(err => console.log(err))
+            .catch(err => { 
+                console.log("http get method err", err)
+                throw Error(err)
+            })
     });
 }
 

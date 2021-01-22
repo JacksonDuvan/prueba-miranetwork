@@ -8,27 +8,6 @@ html{
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
 }
-.container-loader{
-    margin: auto;
-}
-
-.loader{
-    width: 3.6rem;
-    height: 3.6rem;
-    border: .5rem solid rgba(0, 0, 0, .1);
-    border-left-color: rgb(19, 18, 18);
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: auto;
-}
-@keyframes spin{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
 
 /*======================= Header =======================*/
 
@@ -271,6 +250,27 @@ a{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 2.64rem;
 }
+
+/*======================= Loader =======================*/
+
+.loader{
+    width: 3.6rem;
+    height: 3.6rem;
+    border: .5rem solid rgba(0, 0, 0, .1);
+    border-left-color: rgb(19, 18, 18);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 @media screen and (max-width: 800px){
 
