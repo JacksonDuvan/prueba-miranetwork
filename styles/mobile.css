@@ -1,0 +1,27 @@
+.movies-nav li button{
+    font-size: 1.5rem;
+}
+.movies-api{
+    grid-template-columns: repeat(auto-fill, 18rem);
+}
+
+.movies-api__img img{
+    width: 16rem;
+    height: 26rem;
+}
+.movies-api__hover{
+    text-align: center;
+    width: 16rem;
+    height: 26rem;
+    left: 1rem;
+} 
+.btn{
+    width: 10rem;
+    height: 3.2rem;
+    margin-bottom: 1.3rem;
+    font-size: 1rem;
+}
+.movies-api__hover div h1{
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}

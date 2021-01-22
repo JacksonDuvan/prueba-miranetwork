@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;700;500&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./styles/tablet.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="./styles/mobile.css" media="screen and (max-width: 440px">
 </head>
 <body>
     <header class="header">
@@ -38,8 +40,9 @@
                 <li><button class="btn" id="trends">Trends</button></li>
                 <li><button class="btn" id="recomendations">Recomendations</button></li>
             </ol>
+            
             <div id="movies" class="movies-api">
-               
+                <div id="container" class="container-loader"></div>
             </div>
         </section>
     </main>

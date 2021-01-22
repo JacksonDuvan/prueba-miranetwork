@@ -2,6 +2,7 @@ const moviesContainer = document.getElementById('movies')
 const all = document.getElementById('all')
 const burgerButton = document.querySelector('#burger')
 const menu = document.querySelector('.nav')
+const container = document.getElementById('container')
 
 
 function hideShow(){
@@ -32,6 +33,7 @@ const UI = (data) => {
 
 
 const getData = (movies) => {
+    container.innerHTML = '<div class="loader"></div>'
     let result = ''
     movies.forEach(element => {
         fetch(`https://www.omdbapi.com/?apikey=ac7b0a43&t=${element}&y=2020`)
@@ -40,12 +42,14 @@ const getData = (movies) => {
                 result += UI(data)
 
                 moviesContainer.innerHTML = result
+                container.innerHTML = ''
             })
             .catch(err => console.log(err))
     })
 }
 
 const getAll = () => {
+    container.innerHTML = '<div class="loader"></div>'
     const topMovies = ['tt7126948', 'tt4154756', 'tt5463162', 
                         'tt3606756', 'tt1825683', 'tt5104604', 
                         'tt5095030', 'tt6911608', 'tt5164214', 
@@ -59,6 +63,7 @@ const getAll = () => {
                 result += UI(data)
 
                 moviesContainer.innerHTML = result
+                container.innerHTML = ''
             })
             .catch(err => console.log(err))
     });
